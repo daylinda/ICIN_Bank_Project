@@ -1,0 +1,18 @@
+package com.bank.application.controller;
+
+import org.springframework.stereotype.Controller;
+
+import com.bank.application.service.RequestsService;
+
+@Controller
+public class RequestsController {
+
+	
+	public void createRequests(String requestType,String requestDiscription) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

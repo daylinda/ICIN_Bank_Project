@@ -1,0 +1,7 @@
+package com.bank.application.service;
+
+public interface RequestsService {
+	
+	void createRequests();
+
+}

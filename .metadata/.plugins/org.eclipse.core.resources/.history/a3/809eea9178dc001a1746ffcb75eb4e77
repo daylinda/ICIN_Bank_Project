@@ -1,0 +1,5 @@
+package com.bank.application.model;
+
+public class Login {
+
+}

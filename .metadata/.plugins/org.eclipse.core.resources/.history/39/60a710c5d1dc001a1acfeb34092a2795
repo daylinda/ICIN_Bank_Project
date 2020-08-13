@@ -1,0 +1,15 @@
+package com.bank.application.service;
+
+import java.util.List;
+
+import com.bank.application.model.User;
+
+
+public interface RegisterService {
+	
+	public User createUser(User user);
+	public User updateUser(User user);
+	public List<User> getAllUsers();
+	public User findByUsername(String username);
+
+}

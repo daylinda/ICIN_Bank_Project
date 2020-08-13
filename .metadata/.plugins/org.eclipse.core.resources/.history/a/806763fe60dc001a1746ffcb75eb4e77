@@ -1,0 +1,57 @@
+package com.bank.application.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Requests {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int requestId;
+	private String requestType;
+	private String requestDiscription;
+	private boolean accept;
+	
+	public Requests() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getRequestId() {
+		return requestId;
+	}
+
+	public void setRequestId(int requestId) {
+		this.requestId = requestId;
+	}
+
+	public String getRequestType() {
+		return requestType;
+	}
+
+	public void setRequestType(String requestType) {
+		this.requestType = requestType;
+	}
+
+	public String getRequestDiscription() {
+		return requestDiscription;
+	}
+
+	public void setRequestDiscription(String requestDiscription) {
+		this.requestDiscription = requestDiscription;
+	}
+
+	public boolean isAccept() {
+		return accept;
+	}
+
+	public void setAccept(boolean accept) {
+		this.accept = accept;
+	}
+	
+	
+	
+
+}

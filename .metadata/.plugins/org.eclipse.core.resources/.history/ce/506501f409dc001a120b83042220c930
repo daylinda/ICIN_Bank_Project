@@ -1,0 +1,5 @@
+package com.bank.application.dao;
+
+public interface SavingsTransfersDAO {
+
+}

@@ -1,0 +1,5 @@
+package com.bank.application.service.impl;
+
+public class LoginServiceImpl {
+
+}

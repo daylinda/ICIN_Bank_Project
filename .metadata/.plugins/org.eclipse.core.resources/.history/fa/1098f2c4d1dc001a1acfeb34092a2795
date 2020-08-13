@@ -1,0 +1,10 @@
+package com.bank.application.service;
+
+import com.bank.application.model.Login;
+import com.bank.application.model.User;
+
+public interface LoginService {
+	
+	public User login(Login login) throws Exception;
+
+}

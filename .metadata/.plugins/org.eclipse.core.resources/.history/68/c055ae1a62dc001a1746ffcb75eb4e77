@@ -1,0 +1,33 @@
+package com.bank.application.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.bank.application.service.RequestsService;
+
+@Controller
+public class RequestsController {
+	
+	@Autowired
+	private RequestsService requestsService;
+
+	@PostMapping("/request")
+	public void createRequests(@RequestParam("requestType")String requestType,@RequestParam("requestDescription")String requestDiscription) {
+		
+		requestsService.createRequests(requestType, requestDiscription);
+		
+	}
+	
+	@PutMapping("/admin/requests")
+	public void acceptRequests(@RequestParam("requestID")int requestId) {
+		
+		requestsService.acceptRequests(requestId);
+		
+	}
+	
+	
+
+}
